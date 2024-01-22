@@ -1,0 +1,196 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+.navbar {
+	background-color: #e6840c;
+	overflow: hidden;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.search-bar {
+	padding: 15px;
+}
+
+.search-input {
+	width: 20%;
+	padding: 20px;
+	border: none;
+	border-radius: 25px;
+	margin-right: 25px;
+	font-size: 25px;
+}
+.btn {
+	padding: 20px 34px;
+	margin: 10px;
+	background-color: black;
+	color: whitesmoke;
+	font-size: larger;
+	border-radius: 25px;
+	&:hover {
+		background-color: blanchedalmond;
+		color: black;
+	}
+}
+#currentPage {
+	font-weight: bold;
+	font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+	.search-bar {
+		float: none;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.search-input {
+		width: 80%;
+		margin-right: 0;
+	}
+}
+
+.responsive-section {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	border-radius: 25px;
+	width: 100%;
+}
+
+.left-side {
+	margin: 25px;
+	overflow: hidden;
+	border-radius: 50%;
+	width: 300px; /* Adjust the width and height as needed */
+	height: 300px;
+	border: 5px solid salmon;
+}
+.image {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.right-side {
+	position: relative;
+
+	max-width: 400px; /* Adjust the max-width as needed */
+}
+
+h1 {
+	font-size: 2.5em;
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: larger;
+	margin-bottom: 15px;
+}
+
+.location i {
+	font-size: 2rem;
+	margin-right: 10px;
+}
+
+.social-links a {
+	display: block;
+	margin-bottom: 10px;
+	text-decoration: none;
+	color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+	.responsive-section {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.left-side,
+	.right-side {
+		width: 50%;
+	}
+}
+
+#repos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.Repos-card {
+	flex: 0 0 calc(30% - 20px); /* Adjust the width as needed, considering margin */
+	margin: 10px 0;
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease-in-out;
+	box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.Repos-card:hover {
+	transform: scale(1.05);
+}
+
+.Repos-card h2 {
+	color: #333;
+}
+
+.Repos-card p {
+	font-size: 20px;
+	color: #666;
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+
+.Repos-card h4 {
+	background-color: rgb(236, 156, 36);
+	font-size: 18px;
+	border-radius: 5px;
+	color: rgb(5, 1, 9);
+	padding: 10px;
+	margin: 5px;
+}
+
+/* Media Query for responsiveness */
+@media only screen and (max-width: 768px) {
+	.Repos-card {
+		flex: 0 0 100%; /* Full width on smaller screens */
+	}
+}
+
+.PageBtn{
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+/* Style the buttons */
+#prevBtn,
+#nextBtn{
+	background-color: #edcf38; 
+	color: black; 
+	border: none;
+	padding: 15px 15px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 16px;
+	margin: 0 5px; 
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+	background-color: #2980b9; 
+}
