@@ -64,6 +64,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         </div>
+
+        <div class="analytics">
+            <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=${username}&show_icons=true&locale=en&layout=compact" alt="Analytics">
+            <img height="200" src="https://github-readme-streak-stats.herokuapp.com/?user=${username}" alt="Analytics"></img>
+        </div> 
+
+
+
         <div id="repos"></div>`;
         main.innerHTML = card;
         currentUsername = username;

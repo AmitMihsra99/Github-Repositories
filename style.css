@@ -1,31 +1,33 @@
 body {
-	margin: 0;
+	padding: 0;
+	margin:0;
+	padding: 0;
+	
 	font-family: Arial, sans-serif;
 }
 
 .navbar {
 	background-color: #e6840c;
 	overflow: hidden;
-	padding: 10px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 }
 
 .search-bar {
-	padding: 15px;
+	padding: 10px;
 }
 
 .search-input {
 	width: 20%;
-	padding: 20px;
+	padding: 10px;
 	border: none;
 	border-radius: 25px;
 	margin-right: 25px;
 	font-size: 25px;
 }
 .btn {
-	padding: 20px 34px;
+	padding: 10px 34px;
 	margin: 10px;
 	background-color: black;
 	color: whitesmoke;
@@ -193,4 +195,14 @@ p {
 #prevBtn:hover,
 #nextBtn:hover {
 	background-color: #2980b9; 
+}
+
+main .analytics {
+    display: flex;
+    justify-content:center; /* or use "space-around" or "space-evenly" for spacing between images */
+}
+
+.analytics img {
+    height:150px;
+    width: auto; /* Let the width be automatically adjusted based on the height */
 }
